@@ -1,0 +1,15 @@
+# language
+zh-CN:
+  # items
+  menu:
+    links: 链接
+    travellings: 开往
+    webstack: 网址
+    friends: 友链
+
+en:
+  menu:
+    links: Links
+    travellings: Travellings
+    webstack: Web Stack
+    friends: Friends
