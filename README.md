@@ -5,6 +5,24 @@
 
 ---
 
+# 项目结构
+```text
+.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+```
+- _config.yml 网站的配置信息，具体可以参考hexo官网；
+- package.json 项目依赖信息；
+- scaffolds 模板文件夹，`hexo new`的时候会通过这个里面的模板初始化页面；
+- source 源文件相关内容
+- themes 主题目录
+
+
 # 准备工作
 1. 需要具备hexo引擎环境；
    - 需要安装node环境，[官网链接](https://nodejs.org/en/) ，推荐安装yarn,`npm install --global yarn`
@@ -12,10 +30,13 @@
 2. clone代码并运行
    - 安装依赖，`yarn or npm install `
    - 测试运行，`hexo g` and `hexo server`
-   - default url : 'localhost:4000'
+   - default url : 'localhost:4000' 
+   
+`ps: hexo官网中文翻译的东西和英文的部分页面不一致，需要来回切换着看哦`  
 
+---
 # 内容调整/依赖说明
-## base on "hexo-6.1.0" 
+- base on "hexo-6.1.0" 
 - 
 
 ## 插件作用及说明：
@@ -42,3 +63,12 @@
 - iconfont配置  : https://www.iconfont.cn/
 
 # 部署操作
+```bash
+hexo g 
+```
+
+## 清除缓存文件
+如果修改已有文件，建议clean一下，提前规避不可知问题；
+```bash
+hexo clean
+```
